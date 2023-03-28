@@ -20,11 +20,19 @@ Deep Dive Into Apache Spark
    <td colspan="2">
       <b style="font-size:30px">Penjelasan</b>
       <p>
-         1. Sc =>  variabel yang merujuk pada objek SparkContext
+         1. Sc =>  variabel yang merujuk pada objek SparkContext 
+      </p>
+      <p>
          2. Parallelize => fungsi dalam SparkContext yang   digunakan untuk membuat RDD (Resilient Distributed Datasets) dari koleksi 
-         3. Accumulator => merupakan variabel yang dapat diakumulasikan, yaitu memiliki operasi “+” yang komutatif dan asosiatif. 
-         4. Lambda => merupakan kata kunci yang digunakan untuk membuat fungsi anonim. Fungsi ini adalah fungsi satu baris kecil yang tidak memiliki nama.
-         5. Value => nilai dari context
+      </p>
+      <p>
+      3. Accumulator => merupakan variabel yang dapat diakumulasikan, yaitu memiliki operasi “+” yang komutatif dan asosiatif. 
+      </p>
+      <p>
+       4. Lambda => merupakan kata kunci yang digunakan untuk membuat fungsi anonim. Fungsi ini adalah fungsi satu baris kecil yang tidak memiliki nama.
+      </p>
+      <p>
+          5. Value => nilai dari context
       </p>
    </td>
  </tr>
