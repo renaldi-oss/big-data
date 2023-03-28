@@ -17,7 +17,10 @@ Deep Dive Into Apache Spark
     <td><img alt="Dark" src="https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20Output/SystemCommandsOutput.png"></td>
  </tr>
  <tr>
-   <td colspan="2">TEST</td>
+   <td colspan="2">
+      <b style="font-size:30px">Penjelasan</b>
+      <p>lorem</p>
+   </td>
  </tr>
 </table><br>
 
