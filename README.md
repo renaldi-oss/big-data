@@ -129,7 +129,16 @@ Deep Dive Into Apache Spark
    <td colspan="2">
       <b style="font-size:30px">Penjelasan</b>
       <p>
-         1. 
+         1. TextFile =>  fungsi yang digunakan untuk membaca file teks dan mengembalikan RDD yang mewakili data dalam file tersebut
+      </p>
+      <p>
+         2. Filter => fungsi transformasi yang digunakan untuk mengembalikan RDD baru dengan subset data yang memenuhi kondisi tertentu
+      </p>
+      <p>
+      3. Cache => fungsi transformasi yang dapat digunakan pada DataFrame, Dataset, atau RDD ketika Anda ingin melakukan lebih dari satu tindakan.  
+      </p>
+      <p>
+       4. Count => fungsi aksi yang digunakan untuk menghitung jumlah baris dalam DataFrame, Dataset, atau RDD.
       </p>
    </td>
  </tr>
