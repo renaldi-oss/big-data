@@ -17,7 +17,7 @@ Deep Dive Into Apache Spark
     <td><img alt="Dark" src="https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20Output/SystemCommandsOutput.png"></td>
  </tr>
  <tr>
-   <td colspan="2">
+   <!-- <td colspan="2">
       <b style="font-size:30px">Penjelasan</b>
       <p>
          1. Sc =>  variabel yang merujuk pada objek SparkContext 
@@ -34,7 +34,7 @@ Deep Dive Into Apache Spark
       <p>
           5. Value => nilai dari context
       </p>
-   </td>
+   </td> -->
  </tr>
 </table><br>
 
@@ -73,7 +73,19 @@ Deep Dive Into Apache Spark
    <td colspan="2">
       <b style="font-size:30px">Penjelasan</b>
       <p>
-         1. 
+         1. Sc =>  variabel yang merujuk pada objek SparkContext 
+      </p>
+      <p>
+         2. Parallelize => fungsi dalam SparkContext yang   digunakan untuk membuat RDD (Resilient Distributed Datasets) dari koleksi 
+      </p>
+      <p>
+      3. Accumulator => merupakan variabel yang dapat diakumulasikan, yaitu memiliki operasi “+” yang komutatif dan asosiatif. 
+      </p>
+      <p>
+       4. Lambda => merupakan kata kunci yang digunakan untuk membuat fungsi anonim. Fungsi ini adalah fungsi satu baris kecil yang tidak memiliki nama.
+      </p>
+      <p>
+          5. Value => nilai dari context
       </p>
    </td>
  </tr>
