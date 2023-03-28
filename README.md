@@ -104,7 +104,13 @@ Deep Dive Into Apache Spark
    <td colspan="2">
       <b style="font-size:30px">Penjelasan</b>
       <p>
-         1. 
+         1. Broadcast =>  fungsi yang dapat digunakan untuk menunjukkan bahwa dataset cukup kecil dan harus disiarkan. Ini berarti bahwa dataset akan dikirim ke setiap node dalam cluster hanya sekali, daripada mengirimkan salinan dengan tugas. Ini dapat membantu mengurangi biaya komunikasi dan meningkatkan kinerja.
+      </p>
+      <p>
+         2. List => digunakan untuk membuat objek daftar, yang merupakan koleksi item yang terurut.
+      </p>
+      <p>
+         3. Range => digunakan untuk menghasilkan urutan angka.
       </p>
    </td>
  </tr>
