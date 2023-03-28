@@ -16,6 +16,9 @@ Deep Dive Into Apache Spark
     <td>https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20Output/SystemCommandsOutput.scala#L1-L3</td>
     <td><img alt="Dark" src="https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20Output/SystemCommandsOutput.png"></td>
  </tr>
+ <tr>
+   <td colspan="2">TEST</td>
+ </tr>
 </table><br>
 
 **2. System Commands ReturnCode**
