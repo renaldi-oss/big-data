@@ -4,62 +4,8 @@ Tugas - Reynaldi Fakhri Pratama
 ## Chapter 3
 Deep Dive Into Apache Spark
 
-### Scala
-
-**1. System Commands Output**
-<table border="0">
- <tr>
-    <td><b style="font-size:30px">Code</b></td>
-    <td><b style="font-size:30px">Output</b></td>
- </tr>
- <tr>
-    <td>https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20Output/SystemCommandsOutput.scala#L1-L3</td>
-    <td><img alt="Dark" src="https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20Output/SystemCommandsOutput.png"></td>
- </tr>
- <tr>
-   <!-- <td colspan="2">
-      <b style="font-size:30px">Penjelasan</b>
-      <p>
-         1. Sc =>  variabel yang merujuk pada objek SparkContext 
-      </p>
-      <p>
-         2. Parallelize => fungsi dalam SparkContext yang   digunakan untuk membuat RDD (Resilient Distributed Datasets) dari koleksi 
-      </p>
-      <p>
-      3. Accumulator => merupakan variabel yang dapat diakumulasikan, yaitu memiliki operasi “+” yang komutatif dan asosiatif. 
-      </p>
-      <p>
-       4. Lambda => merupakan kata kunci yang digunakan untuk membuat fungsi anonim. Fungsi ini adalah fungsi satu baris kecil yang tidak memiliki nama.
-      </p>
-      <p>
-          5. Value => nilai dari context
-      </p>
-   </td> -->
- </tr>
-</table><br>
-
-**2. System Commands ReturnCode**
-<table border="0">
- <tr>
-    <td><b style="font-size:30px">Code</b></td>
-    <td><b style="font-size:30px">Output</b></td>
- </tr>
- <tr>
-    <td>https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20ReturnCode/SystemCommandsReturnCode.scala#L1-L3 </td>
-    <td><img alt="Dark" src="https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20ReturnCode/SystemCommandsReturnCode.png"></td>
- </tr>
- <tr>
-   <td colspan="2">
-      <b style="font-size:30px">Penjelasan</b>
-      <p>
-         1. 
-      </p>
-   </td>
- </tr>
-</table>
-
 ### Python
-**1. Acccumulator**
+**1. Acccumulator (kode 1)**
 <table border="0">
  <tr>
     <td><b style="font-size:30px">Code</b></td>
@@ -90,7 +36,7 @@ Deep Dive Into Apache Spark
    </td>
  </tr>
 </table>
-<b>2. BroadCast</b>
+<b>2. BroadCast (kode 2)</b>
 <table border="0">
  <tr>
     <td><b style="font-size:30px">Code</b></td>
@@ -115,7 +61,7 @@ Deep Dive Into Apache Spark
    </td>
  </tr>
 </table>
-<b>3. Log Analytics</b>
+<b>3. Log Analytics (kode 3)</b>
 <table border="0">
  <tr>
     <td><b style="font-size:30px">Code</b></td>
@@ -143,7 +89,7 @@ Deep Dive Into Apache Spark
    </td>
  </tr>
 </table>
-<b>4. Pair RDD</b>
+<b>4. Pair RDD (kode 4)</b>
     <table border="0">
  <tr>
     <td><b style="font-size:30px">Code</b></td>
@@ -157,12 +103,24 @@ Deep Dive Into Apache Spark
    <td colspan="2">
       <b style="font-size:30px">Penjelasan</b>
       <p>
-         1. 
+         1. map => mengubah setiap elemen RDD menjadi elemen baru dengan menerapkan fungsi pada elemen tersebut
+      </p>
+      <p>
+         2. collect => mengembalikan semua elemen RDD sebagai daftar ke driver
+      </p>
+      <p>
+         3. len => mengembalikan panjang objek yang dapat diukur, seperti daftar atau string
+      </p>
+      <p>
+         4. keys => mengembalikan daftar kunci dari kolom MapType di spark
+      </p>
+      <p>
+         4. values => mengembalikan daftar nilai dari kolom MapType di spark
       </p>
    </td>
  </tr>
 </table>
-<b>5. Understanding RDDs</b>
+<b>5. Understanding RDDs (kode 5)</b>
     <table border="0">
  <tr>
     <td><b style="font-size:30px" width="20%">Code</b></td>
@@ -176,12 +134,27 @@ Deep Dive Into Apache Spark
    <td colspan="2">
       <b style="font-size:30px">Penjelasan</b>
       <p>
-         1. 
+         1. defaultParallelism => digunakan untuk mendapatkan jumlah partisi yang digunakan oleh spark
+      </p>
+      <p>
+         2. getNumPartitions => digunakan untuk mendapatkan jumlah partisi dari RDD
+      </p>
+      <p>
+         3. mapPartitionsWithIndex => digunakan untuk mengubah setiap partisi RDD menjadi elemen baru dengan menerapkan fungsi pada partisi tersebut
+      </p>
+      <p>
+         4. repartition => digunakan untuk mengubah jumlah partisi RDD
+      </p>
+      <p>
+         5. coalesce => digunakan untuk mengubah jumlah partisi RDD dengan mempertahankan jumlah partisi yang ada
+      </p>
+      <p>
+         6. toDebugString => digunakan untuk mendapatkan informasi tentang RDD
       </p>
    </td>
  </tr>
 </table>
-<b>6. Word Count</b>
+<b>6. Word Count (kode 6)</b>
     <table border="0">
  <tr>
     <td><b style="font-size:30px">Code</b></td>
@@ -194,9 +167,70 @@ Deep Dive Into Apache Spark
  <tr>
    <td colspan="2">
       <b style="font-size:30px">Penjelasan</b>
+      <!-- jelaskan mengenai flatMap, reduceByKey, split -->
       <p>
-         1. 
+         1. flatMap => digunakan untuk mengubah setiap elemen RDD menjadi elemen baru dengan menerapkan fungsi pada elemen tersebut
+      </p>
+      <p>
+         2. reduceByKey => digunakan untuk menggabungkan semua elemen RDD dengan fungsi yang sama dengan kunci yang sama
+      </p>
+      <p>
+         3. split => digunakan untuk memecah string menjadi daftar string
       </p>
    </td>
  </tr>
+</table>
+
+### Scala
+
+**1. System Commands Output**
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">Code</b></td>
+    <td><b style="font-size:30px">Output</b></td>
+ </tr>
+ <tr>
+    <td>https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20Output/SystemCommandsOutput.scala#L1-L3</td>
+    <td><img alt="Dark" src="https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20Output/SystemCommandsOutput.png"></td>
+ </tr>
+ <!-- <tr>
+   <td colspan="2">
+      <b style="font-size:30px">Penjelasan</b>
+      <p>
+         1. Sc =>  variabel yang merujuk pada objek SparkContext 
+      </p>
+      <p>
+         2. Parallelize => fungsi dalam SparkContext yang   digunakan untuk membuat RDD (Resilient Distributed Datasets) dari koleksi 
+      </p>
+      <p>
+      3. Accumulator => merupakan variabel yang dapat diakumulasikan, yaitu memiliki operasi “+” yang komutatif dan asosiatif. 
+      </p>
+      <p>
+       4. Lambda => merupakan kata kunci yang digunakan untuk membuat fungsi anonim. Fungsi ini adalah fungsi satu baris kecil yang tidak memiliki nama.
+      </p>
+      <p>
+          5. Value => nilai dari context
+      </p>
+   </td>
+ </tr> -->
+</table><br>
+
+**2. System Commands ReturnCode**
+<table border="0">
+ <tr>
+    <td><b style="font-size:30px">Code</b></td>
+    <td><b style="font-size:30px">Output</b></td>
+ </tr>
+ <tr>
+    <td>https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20ReturnCode/SystemCommandsReturnCode.scala#L1-L3 </td>
+    <td><img alt="Dark" src="https://github.com/renaldi-oss/big-data/blob/148578888a4bef43d8c0d8c23929cc22e5108477/System%20Commands%20ReturnCode/SystemCommandsReturnCode.png"></td>
+ </tr>
+ <!-- <tr>
+   <td colspan="2">
+      <b style="font-size:30px">Penjelasan</b>
+      <p>
+         1. sys.process adalah perintah untuk mengimpor modul sys.process dari Scala. Module ini digunakan untuk menjalankan dan mengontrol proses eksternal dari program
+      </p>
+   </td>
+ </tr> -->
 </table>
