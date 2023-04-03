@@ -167,7 +167,6 @@ Deep Dive Into Apache Spark
  <tr>
    <td colspan="2">
       <b style="font-size:30px">Penjelasan</b>
-      <!-- jelaskan mengenai flatMap, reduceByKey, split -->
       <p>
          1. flatMap => digunakan untuk mengubah setiap elemen RDD menjadi elemen baru dengan menerapkan fungsi pada elemen tersebut
       </p>
