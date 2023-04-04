@@ -31,7 +31,7 @@ Deep Dive Into Apache Spark
        4. Lambda => merupakan kata kunci yang digunakan untuk membuat fungsi anonim. Fungsi ini adalah fungsi satu baris kecil yang tidak memiliki nama.
       </p>
       <p>
-          5. Value => nilai dari context
+          5. Value => nilai dari accumulator
       </p>
    </td>
  </tr>
